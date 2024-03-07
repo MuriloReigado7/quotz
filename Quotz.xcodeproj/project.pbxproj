@@ -9,13 +9,44 @@
 /* Begin PBXBuildFile section */
 		1C0C0B992B9892980092A55D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C0B982B9892980092A55D /* AppDelegate.swift */; };
 		1C0C0B9B2B9892980092A55D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C0B9A2B9892980092A55D /* SceneDelegate.swift */; };
-		1C0C0B9D2B9892980092A55D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C0B9C2B9892980092A55D /* ViewController.swift */; };
-		1C0C0BA02B9892980092A55D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0C0B9E2B9892980092A55D /* Main.storyboard */; };
+		1C0C0B9D2B9892980092A55D /* MyQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C0B9C2B9892980092A55D /* MyQuotesViewController.swift */; };
 		1C0C0BA22B9892990092A55D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C0C0BA12B9892990092A55D /* Assets.xcassets */; };
 		1C0C0BA52B9892990092A55D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0C0BA32B9892990092A55D /* LaunchScreen.storyboard */; };
 		1C0C0BB02B9892990092A55D /* QuotzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C0BAF2B9892990092A55D /* QuotzTests.swift */; };
 		1C0C0BBA2B9892990092A55D /* QuotzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C0BB92B9892990092A55D /* QuotzUITests.swift */; };
 		1C0C0BBC2B9892990092A55D /* QuotzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C0BBB2B9892990092A55D /* QuotzUITestsLaunchTests.swift */; };
+		1CD661BD2B98B24000D751F2 /* MyQuotesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661BC2B98B24000D751F2 /* MyQuotesPresenter.swift */; };
+		1CD661BF2B98B2D700D751F2 /* MyQuotesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661BE2B98B2D700D751F2 /* MyQuotesView.xib */; };
+		1CD661CB2B98B9FC00D751F2 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C22B98B9FB00D751F2 /* Inter-SemiBold.ttf */; };
+		1CD661CC2B98B9FC00D751F2 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C32B98B9FB00D751F2 /* Inter-Thin.ttf */; };
+		1CD661CD2B98B9FC00D751F2 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C42B98B9FB00D751F2 /* Inter-Light.ttf */; };
+		1CD661CE2B98B9FC00D751F2 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C52B98B9FC00D751F2 /* Inter-Black.ttf */; };
+		1CD661CF2B98B9FC00D751F2 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C62B98B9FC00D751F2 /* Inter-Bold.ttf */; };
+		1CD661D02B98B9FC00D751F2 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C72B98B9FC00D751F2 /* Inter-ExtraLight.ttf */; };
+		1CD661D12B98B9FC00D751F2 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C82B98B9FC00D751F2 /* Inter-ExtraBold.ttf */; };
+		1CD661D22B98B9FC00D751F2 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C92B98B9FC00D751F2 /* Inter-Regular.ttf */; };
+		1CD661D32B98B9FC00D751F2 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661CA2B98B9FC00D751F2 /* Inter-Medium.ttf */; };
+		1CD661D42B98BA0000D751F2 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C12B98B4CF00D751F2 /* Inter-VariableFont_slnt,wght.ttf */; };
+		1CD661D72B98BB1800D751F2 /* NewQuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661D62B98BB1800D751F2 /* NewQuoteView.xib */; };
+		1CD661D92B98BB2400D751F2 /* NewQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661D82B98BB2400D751F2 /* NewQuoteViewController.swift */; };
+		1CD661DB2B98BB3400D751F2 /* NewQuotePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661DA2B98BB3400D751F2 /* NewQuotePresenter.swift */; };
+		1CD661DE2B98BE1900D751F2 /* CreateQuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661DD2B98BE1900D751F2 /* CreateQuoteView.xib */; };
+		1CD661E02B98BE2A00D751F2 /* CreateQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661DF2B98BE2A00D751F2 /* CreateQuoteViewController.swift */; };
+		1CD661E22B98BE3600D751F2 /* CreateQuotePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661E12B98BE3600D751F2 /* CreateQuotePresenter.swift */; };
+		1CD661E52B98BF0F00D751F2 /* SelectQuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661E42B98BF0F00D751F2 /* SelectQuoteView.xib */; };
+		1CD661E72B98BF1B00D751F2 /* SelectQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661E62B98BF1B00D751F2 /* SelectQuoteViewController.swift */; };
+		1CD661E92B98BF2A00D751F2 /* SelectQuotePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661E82B98BF2A00D751F2 /* SelectQuotePresenter.swift */; };
+		1CD661EC2B98C5B500D751F2 /* QuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661EB2B98C5B500D751F2 /* QuoteView.xib */; };
+		1CD661EE2B98C5C000D751F2 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661ED2B98C5BF00D751F2 /* QuoteViewController.swift */; };
+		1CD661F02B98C5CA00D751F2 /* QuotePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661EF2B98C5CA00D751F2 /* QuotePresenter.swift */; };
+		1CD661F42B98D24A00D751F2 /* SelectQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661F22B98D24A00D751F2 /* SelectQuoteTableViewCell.swift */; };
+		1CD661F52B98D24A00D751F2 /* SelectQuoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661F32B98D24A00D751F2 /* SelectQuoteTableViewCell.xib */; };
+		1CD6620B2B9A129200D751F2 /* MyQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6620A2B9A129200D751F2 /* MyQuotes.swift */; };
+		1CD6620D2B9A176200D751F2 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6620C2B9A176200D751F2 /* UserDefaults.swift */; };
+		1CD662112B9A1B2700D751F2 /* MyQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6620F2B9A1B2700D751F2 /* MyQuoteTableViewCell.swift */; };
+		1CD662122B9A1B2700D751F2 /* MyQuoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD662102B9A1B2700D751F2 /* MyQuoteTableViewCell.xib */; };
+		1CD662162B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD662142B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift */; };
+		1CD662172B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD662152B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +70,46 @@
 		1C0C0B952B9892980092A55D /* Quotz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0C0B982B9892980092A55D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C0C0B9A2B9892980092A55D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C0C0B9C2B9892980092A55D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1C0C0B9F2B9892980092A55D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C0C0B9C2B9892980092A55D /* MyQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQuotesViewController.swift; sourceTree = "<group>"; };
 		1C0C0BA12B9892990092A55D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C0C0BA42B9892990092A55D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1C0C0BA62B9892990092A55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C0C0BAB2B9892990092A55D /* QuotzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0C0BAF2B9892990092A55D /* QuotzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotzTests.swift; sourceTree = "<group>"; };
 		1C0C0BB52B9892990092A55D /* QuotzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0C0BB92B9892990092A55D /* QuotzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotzUITests.swift; sourceTree = "<group>"; };
 		1C0C0BBB2B9892990092A55D /* QuotzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotzUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CD661BC2B98B24000D751F2 /* MyQuotesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQuotesPresenter.swift; sourceTree = "<group>"; };
+		1CD661BE2B98B2D700D751F2 /* MyQuotesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyQuotesView.xib; sourceTree = "<group>"; };
+		1CD661C12B98B4CF00D751F2 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
+		1CD661C22B98B9FB00D751F2 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		1CD661C32B98B9FB00D751F2 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		1CD661C42B98B9FB00D751F2 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		1CD661C52B98B9FC00D751F2 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		1CD661C62B98B9FC00D751F2 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		1CD661C72B98B9FC00D751F2 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1CD661C82B98B9FC00D751F2 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1CD661C92B98B9FC00D751F2 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		1CD661CA2B98B9FC00D751F2 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		1CD661D62B98BB1800D751F2 /* NewQuoteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewQuoteView.xib; sourceTree = "<group>"; };
+		1CD661D82B98BB2400D751F2 /* NewQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuoteViewController.swift; sourceTree = "<group>"; };
+		1CD661DA2B98BB3400D751F2 /* NewQuotePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuotePresenter.swift; sourceTree = "<group>"; };
+		1CD661DD2B98BE1900D751F2 /* CreateQuoteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateQuoteView.xib; sourceTree = "<group>"; };
+		1CD661DF2B98BE2A00D751F2 /* CreateQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuoteViewController.swift; sourceTree = "<group>"; };
+		1CD661E12B98BE3600D751F2 /* CreateQuotePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuotePresenter.swift; sourceTree = "<group>"; };
+		1CD661E42B98BF0F00D751F2 /* SelectQuoteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectQuoteView.xib; sourceTree = "<group>"; };
+		1CD661E62B98BF1B00D751F2 /* SelectQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuoteViewController.swift; sourceTree = "<group>"; };
+		1CD661E82B98BF2A00D751F2 /* SelectQuotePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuotePresenter.swift; sourceTree = "<group>"; };
+		1CD661EB2B98C5B500D751F2 /* QuoteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuoteView.xib; sourceTree = "<group>"; };
+		1CD661ED2B98C5BF00D751F2 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		1CD661EF2B98C5CA00D751F2 /* QuotePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotePresenter.swift; sourceTree = "<group>"; };
+		1CD661F22B98D24A00D751F2 /* SelectQuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuoteTableViewCell.swift; sourceTree = "<group>"; };
+		1CD661F32B98D24A00D751F2 /* SelectQuoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectQuoteTableViewCell.xib; sourceTree = "<group>"; };
+		1CD6620A2B9A129200D751F2 /* MyQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQuotes.swift; sourceTree = "<group>"; };
+		1CD6620C2B9A176200D751F2 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		1CD6620F2B9A1B2700D751F2 /* MyQuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQuoteTableViewCell.swift; sourceTree = "<group>"; };
+		1CD662102B9A1B2700D751F2 /* MyQuoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyQuoteTableViewCell.xib; sourceTree = "<group>"; };
+		1CD662142B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuoteTableViewCell.swift; sourceTree = "<group>"; };
+		1CD662152B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateQuoteTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +162,8 @@
 			children = (
 				1C0C0BC82B9893B20092A55D /* Application */,
 				1C0C0BC92B9893C00092A55D /* Model */,
+				1CD661C02B98B4BB00D751F2 /* Fonts */,
 				1C0C0BCA2B9893CE0092A55D /* Modules */,
-				1C0C0B9C2B9892980092A55D /* ViewController.swift */,
-				1C0C0B9E2B9892980092A55D /* Main.storyboard */,
 			);
 			path = Quotz;
 			sourceTree = "<group>";
@@ -132,7 +192,6 @@
 				1C0C0B9A2B9892980092A55D /* SceneDelegate.swift */,
 				1C0C0BA32B9892990092A55D /* LaunchScreen.storyboard */,
 				1C0C0BA12B9892990092A55D /* Assets.xcassets */,
-				1C0C0BA62B9892990092A55D /* Info.plist */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -140,6 +199,8 @@
 		1C0C0BC92B9893C00092A55D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1CD6620A2B9A129200D751F2 /* MyQuotes.swift */,
+				1CD6620C2B9A176200D751F2 /* UserDefaults.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,8 +208,110 @@
 		1C0C0BCA2B9893CE0092A55D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1CD661BB2B98AF7200D751F2 /* MyQuotes */,
+				1CD661D52B98BAFE00D751F2 /* NewQuote */,
+				1CD661E32B98BE3A00D751F2 /* SelectQuote */,
+				1CD661DC2B98BDD800D751F2 /* CreateQuote */,
+				1CD661EA2B98C4F200D751F2 /* Quote */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		1CD661BB2B98AF7200D751F2 /* MyQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				1CD6620E2B9A1B0E00D751F2 /* Cell */,
+				1CD661BE2B98B2D700D751F2 /* MyQuotesView.xib */,
+				1C0C0B9C2B9892980092A55D /* MyQuotesViewController.swift */,
+				1CD661BC2B98B24000D751F2 /* MyQuotesPresenter.swift */,
+			);
+			path = MyQuotes;
+			sourceTree = "<group>";
+		};
+		1CD661C02B98B4BB00D751F2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1CD661C52B98B9FC00D751F2 /* Inter-Black.ttf */,
+				1CD661C62B98B9FC00D751F2 /* Inter-Bold.ttf */,
+				1CD661C82B98B9FC00D751F2 /* Inter-ExtraBold.ttf */,
+				1CD661C72B98B9FC00D751F2 /* Inter-ExtraLight.ttf */,
+				1CD661C42B98B9FB00D751F2 /* Inter-Light.ttf */,
+				1CD661CA2B98B9FC00D751F2 /* Inter-Medium.ttf */,
+				1CD661C92B98B9FC00D751F2 /* Inter-Regular.ttf */,
+				1CD661C22B98B9FB00D751F2 /* Inter-SemiBold.ttf */,
+				1CD661C32B98B9FB00D751F2 /* Inter-Thin.ttf */,
+				1CD661C12B98B4CF00D751F2 /* Inter-VariableFont_slnt,wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1CD661D52B98BAFE00D751F2 /* NewQuote */ = {
+			isa = PBXGroup;
+			children = (
+				1CD661D62B98BB1800D751F2 /* NewQuoteView.xib */,
+				1CD661D82B98BB2400D751F2 /* NewQuoteViewController.swift */,
+				1CD661DA2B98BB3400D751F2 /* NewQuotePresenter.swift */,
+			);
+			path = NewQuote;
+			sourceTree = "<group>";
+		};
+		1CD661DC2B98BDD800D751F2 /* CreateQuote */ = {
+			isa = PBXGroup;
+			children = (
+				1CD662132B9A3F0900D751F2 /* Cell */,
+				1CD661DD2B98BE1900D751F2 /* CreateQuoteView.xib */,
+				1CD661DF2B98BE2A00D751F2 /* CreateQuoteViewController.swift */,
+				1CD661E12B98BE3600D751F2 /* CreateQuotePresenter.swift */,
+			);
+			path = CreateQuote;
+			sourceTree = "<group>";
+		};
+		1CD661E32B98BE3A00D751F2 /* SelectQuote */ = {
+			isa = PBXGroup;
+			children = (
+				1CD661F12B98D21D00D751F2 /* Cell */,
+				1CD661E42B98BF0F00D751F2 /* SelectQuoteView.xib */,
+				1CD661E62B98BF1B00D751F2 /* SelectQuoteViewController.swift */,
+				1CD661E82B98BF2A00D751F2 /* SelectQuotePresenter.swift */,
+			);
+			path = SelectQuote;
+			sourceTree = "<group>";
+		};
+		1CD661EA2B98C4F200D751F2 /* Quote */ = {
+			isa = PBXGroup;
+			children = (
+				1CD661EB2B98C5B500D751F2 /* QuoteView.xib */,
+				1CD661ED2B98C5BF00D751F2 /* QuoteViewController.swift */,
+				1CD661EF2B98C5CA00D751F2 /* QuotePresenter.swift */,
+			);
+			path = Quote;
+			sourceTree = "<group>";
+		};
+		1CD661F12B98D21D00D751F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1CD661F32B98D24A00D751F2 /* SelectQuoteTableViewCell.xib */,
+				1CD661F22B98D24A00D751F2 /* SelectQuoteTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1CD6620E2B9A1B0E00D751F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1CD662102B9A1B2700D751F2 /* MyQuoteTableViewCell.xib */,
+				1CD6620F2B9A1B2700D751F2 /* MyQuoteTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1CD662132B9A3F0900D751F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1CD662152B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib */,
+				1CD662142B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +418,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD661CB2B98B9FC00D751F2 /* Inter-SemiBold.ttf in Resources */,
 				1C0C0BA52B9892990092A55D /* LaunchScreen.storyboard in Resources */,
+				1CD662122B9A1B2700D751F2 /* MyQuoteTableViewCell.xib in Resources */,
+				1CD661D72B98BB1800D751F2 /* NewQuoteView.xib in Resources */,
+				1CD661CF2B98B9FC00D751F2 /* Inter-Bold.ttf in Resources */,
+				1CD661BF2B98B2D700D751F2 /* MyQuotesView.xib in Resources */,
+				1CD662172B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib in Resources */,
+				1CD661CC2B98B9FC00D751F2 /* Inter-Thin.ttf in Resources */,
+				1CD661D12B98B9FC00D751F2 /* Inter-ExtraBold.ttf in Resources */,
+				1CD661EC2B98C5B500D751F2 /* QuoteView.xib in Resources */,
+				1CD661CD2B98B9FC00D751F2 /* Inter-Light.ttf in Resources */,
 				1C0C0BA22B9892990092A55D /* Assets.xcassets in Resources */,
-				1C0C0BA02B9892980092A55D /* Main.storyboard in Resources */,
+				1CD661D32B98B9FC00D751F2 /* Inter-Medium.ttf in Resources */,
+				1CD661D22B98B9FC00D751F2 /* Inter-Regular.ttf in Resources */,
+				1CD661F52B98D24A00D751F2 /* SelectQuoteTableViewCell.xib in Resources */,
+				1CD661D02B98B9FC00D751F2 /* Inter-ExtraLight.ttf in Resources */,
+				1CD661DE2B98BE1900D751F2 /* CreateQuoteView.xib in Resources */,
+				1CD661E52B98BF0F00D751F2 /* SelectQuoteView.xib in Resources */,
+				1CD661CE2B98B9FC00D751F2 /* Inter-Black.ttf in Resources */,
+				1CD661D42B98BA0000D751F2 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +462,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C0C0B9D2B9892980092A55D /* ViewController.swift in Sources */,
+				1CD661DB2B98BB3400D751F2 /* NewQuotePresenter.swift in Sources */,
+				1CD661F42B98D24A00D751F2 /* SelectQuoteTableViewCell.swift in Sources */,
+				1CD6620D2B9A176200D751F2 /* UserDefaults.swift in Sources */,
+				1CD661F02B98C5CA00D751F2 /* QuotePresenter.swift in Sources */,
+				1C0C0B9D2B9892980092A55D /* MyQuotesViewController.swift in Sources */,
+				1CD661E02B98BE2A00D751F2 /* CreateQuoteViewController.swift in Sources */,
+				1CD661D92B98BB2400D751F2 /* NewQuoteViewController.swift in Sources */,
+				1CD661BD2B98B24000D751F2 /* MyQuotesPresenter.swift in Sources */,
+				1CD661E92B98BF2A00D751F2 /* SelectQuotePresenter.swift in Sources */,
+				1CD6620B2B9A129200D751F2 /* MyQuotes.swift in Sources */,
 				1C0C0B992B9892980092A55D /* AppDelegate.swift in Sources */,
 				1C0C0B9B2B9892980092A55D /* SceneDelegate.swift in Sources */,
+				1CD662112B9A1B2700D751F2 /* MyQuoteTableViewCell.swift in Sources */,
+				1CD662162B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift in Sources */,
+				1CD661E22B98BE3600D751F2 /* CreateQuotePresenter.swift in Sources */,
+				1CD661EE2B98C5C000D751F2 /* QuoteViewController.swift in Sources */,
+				1CD661E72B98BF1B00D751F2 /* SelectQuoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,14 +515,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1C0C0B9E2B9892980092A55D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C0C0B9F2B9892980092A55D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1C0C0BA32B9892990092A55D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -471,7 +657,6 @@
 				INFOPLIST_FILE = Quotz/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -500,7 +685,6 @@
 				INFOPLIST_FILE = Quotz/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
