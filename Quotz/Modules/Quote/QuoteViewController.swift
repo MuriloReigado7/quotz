@@ -113,14 +113,6 @@ class QuoteViewController: UIViewController, QuotePresenterDelegate, UITextField
         return "\(quoteIn)-\(quoteOut)"
     }
     
-    func saveQuote(_ quote: MyQuotes) {
-        let encoder = JSONEncoder()
-        if let encoded = try? encoder.encode(quote) {
-            let defaults = UserDefaults.standard
-            defaults.set(encoded, forKey: "savedQuote")
-        }
-    }
-    
     func getDate() -> String {
         
         let actualDate = Date()
@@ -136,12 +128,15 @@ class QuoteViewController: UIViewController, QuotePresenterDelegate, UITextField
     }
     
     @IBAction func saveQuoteTapped(_ sender: Any) {
-        let quote = MyQuotes(date: getDate(),
+        
+        let newQuote = MyQuotes(date: getDate(),
                              valueIn: valueTextField.text ?? "",
                              valueOut: quoteResult.text ?? "",
                              quoteIn: quoteIn,
                              quoteOut: quoteOut)
-        saveQuote(quote)
+        
+        DataManager.shared.userInformation.append(newQuote)
+        DataManager.shared.saveInformation()
         presenter?.openMyQuotesView()
     }
 }

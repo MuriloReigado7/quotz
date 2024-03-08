@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreateQuoteViewController: UIViewController, CreateQuotePresenterDelegate {
+class CreateQuoteViewController: UIViewController, CreateQuotePresenterDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
@@ -22,6 +22,8 @@ class CreateQuoteViewController: UIViewController, CreateQuotePresenterDelegate 
     var isFirstTouch = true
     var quoteIn = ""
     var quoteOut = ""
+    var quotesFilter = [String]()
+    var quotesNameFilter = [String]()
     
     //---------------------------------------------------------
     // MARK: Initializer
@@ -52,6 +54,12 @@ class CreateQuoteViewController: UIViewController, CreateQuotePresenterDelegate 
         self.navigationController?.navigationBar.isHidden = true
         self.setupTableView()
         self.setupUI()
+        self.searchTextField.delegate = self
+        self.presenter?.filterQuotes()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     //---------------------------------------------------------
@@ -112,6 +120,11 @@ class CreateQuoteViewController: UIViewController, CreateQuotePresenterDelegate 
         return dictionaryKeys
     }
 
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let text = (textField.text as NSString?)?.replacingCharacters(in: range, with: string) ?? ""
+        presenter?.filterData(with: text)
+        return true
+    }
 }
 
     //---------------------------------------------------------
@@ -121,13 +134,24 @@ class CreateQuoteViewController: UIViewController, CreateQuotePresenterDelegate 
 extension CreateQuoteViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter?.quotes.count ?? 0
+        if presenter?.quotesForFilter.count == 0 {
+            return presenter?.quotes.count ?? 0
+        } else {
+            return presenter?.quotesForFilter.count ?? 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CreateQuoteTableViewCell.identifier, for: indexPath) as! CreateQuoteTableViewCell
-        cell.quoteLabel.text = getQuote()[indexPath.row]
-        cell.quoteNameLabel.text = getQuoteName()[indexPath.row]
+        
+        if presenter?.quotesForFilter.count == 0 {
+            cell.quoteLabel.text = getQuote()[indexPath.row]
+            cell.quoteNameLabel.text = getQuoteName()[indexPath.row]
+        } else {
+            let value = presenter?.quotesForFilter[indexPath.row]
+            cell.quoteLabel.text = value?.0
+            cell.quoteNameLabel.text = value?.1
+        }
         return cell
     }
     
@@ -136,15 +160,31 @@ extension CreateQuoteViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if isFirstTouch {
-            self.quoteInLabel.text = getQuote()[indexPath.row]
-            self.quoteIn = getQuote()[indexPath.row]
-            isFirstTouch = false
+        
+        if presenter?.quotesForFilter.count == 0 {
+            if isFirstTouch {
+                self.quoteInLabel.text = getQuote()[indexPath.row]
+                self.quoteIn = getQuote()[indexPath.row]
+                isFirstTouch = false
+            } else {
+                self.quoteOutLabel.text = getQuote()[indexPath.row]
+                self.quoteOut = getQuote()[indexPath.row]
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                    self.presenter?.openQuoteResultView(quoteIn: self.quoteIn, quoteOut: self.quoteOut)
+                }
+            }
         } else {
-            self.quoteOutLabel.text = getQuote()[indexPath.row]
-            self.quoteOut = getQuote()[indexPath.row]
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                self.presenter?.openQuoteResultView(quoteIn: self.quoteIn, quoteOut: self.quoteOut)
+            let value = presenter?.quotesForFilter[indexPath.row]
+            if isFirstTouch {
+                self.quoteInLabel.text = value?.0
+                self.quoteIn = value?.0 ?? ""
+                isFirstTouch = false
+            } else {
+                self.quoteOutLabel.text = value?.0
+                self.quoteOut = value?.0 ?? ""
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                    self.presenter?.openQuoteResultView(quoteIn: self.quoteIn, quoteOut: self.quoteOut)
+                }
             }
         }
         animateView()

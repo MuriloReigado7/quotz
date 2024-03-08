@@ -42,7 +42,6 @@ class SelectQuoteViewController: UIViewController, SelectQuotePresenterDelegate 
         presenter = SelectQuotePresenter(delegate: self)
         self.navigationController?.navigationBar.isHidden = true
         self.setupTableView()
-        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

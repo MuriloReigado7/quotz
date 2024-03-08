@@ -9,11 +9,13 @@ import UIKit
 
 protocol MyQuotesPresenterDelegate {
     func pushVC(_ viewController: UIViewController)
+    func reloadData()
 }
 
 final class MyQuotesPresenter {
     
     public var delegate: MyQuotesPresenterDelegate?
+    public var quotes: [MyQuotes] = []
     
     init(delegate: MyQuotesPresenterDelegate) {
         self.delegate = delegate

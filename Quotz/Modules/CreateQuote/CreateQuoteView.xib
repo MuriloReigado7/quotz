@@ -87,14 +87,20 @@
                                 <constraint firstAttribute="height" constant="25" id="kT0-D3-bjp"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSo-1K-Sft">
-                            <rect key="frame" x="76" y="17.5" width="34" height="22"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSo-1K-Sft">
+                            <rect key="frame" x="50" y="17.5" width="60" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="mzX-wi-jDe"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="18"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2k-th-AXv">
-                            <rect key="frame" x="195" y="17.5" width="33.5" height="22"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2k-th-AXv">
+                            <rect key="frame" x="195" y="17.5" width="60" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="spW-aB-YMo"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="18"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>

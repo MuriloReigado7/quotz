@@ -42,11 +42,12 @@
 		1CD661F42B98D24A00D751F2 /* SelectQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661F22B98D24A00D751F2 /* SelectQuoteTableViewCell.swift */; };
 		1CD661F52B98D24A00D751F2 /* SelectQuoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661F32B98D24A00D751F2 /* SelectQuoteTableViewCell.xib */; };
 		1CD6620B2B9A129200D751F2 /* MyQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6620A2B9A129200D751F2 /* MyQuotes.swift */; };
-		1CD6620D2B9A176200D751F2 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6620C2B9A176200D751F2 /* UserDefaults.swift */; };
 		1CD662112B9A1B2700D751F2 /* MyQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6620F2B9A1B2700D751F2 /* MyQuoteTableViewCell.swift */; };
 		1CD662122B9A1B2700D751F2 /* MyQuoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD662102B9A1B2700D751F2 /* MyQuoteTableViewCell.xib */; };
 		1CD662162B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD662142B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift */; };
 		1CD662172B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD662152B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib */; };
+		1CD662192B9B4AC400D751F2 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD662182B9B4AC400D751F2 /* Quotes.swift */; };
+		1CD6621B2B9B6F2700D751F2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6621A2B9B6F2700D751F2 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,11 +106,12 @@
 		1CD661F22B98D24A00D751F2 /* SelectQuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuoteTableViewCell.swift; sourceTree = "<group>"; };
 		1CD661F32B98D24A00D751F2 /* SelectQuoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectQuoteTableViewCell.xib; sourceTree = "<group>"; };
 		1CD6620A2B9A129200D751F2 /* MyQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQuotes.swift; sourceTree = "<group>"; };
-		1CD6620C2B9A176200D751F2 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		1CD6620F2B9A1B2700D751F2 /* MyQuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQuoteTableViewCell.swift; sourceTree = "<group>"; };
 		1CD662102B9A1B2700D751F2 /* MyQuoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyQuoteTableViewCell.xib; sourceTree = "<group>"; };
 		1CD662142B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuoteTableViewCell.swift; sourceTree = "<group>"; };
 		1CD662152B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateQuoteTableViewCell.xib; sourceTree = "<group>"; };
+		1CD662182B9B4AC400D751F2 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		1CD6621A2B9B6F2700D751F2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,8 +201,9 @@
 		1C0C0BC92B9893C00092A55D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1CD662182B9B4AC400D751F2 /* Quotes.swift */,
 				1CD6620A2B9A129200D751F2 /* MyQuotes.swift */,
-				1CD6620C2B9A176200D751F2 /* UserDefaults.swift */,
+				1CD6621A2B9B6F2700D751F2 /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -464,17 +467,18 @@
 			files = (
 				1CD661DB2B98BB3400D751F2 /* NewQuotePresenter.swift in Sources */,
 				1CD661F42B98D24A00D751F2 /* SelectQuoteTableViewCell.swift in Sources */,
-				1CD6620D2B9A176200D751F2 /* UserDefaults.swift in Sources */,
 				1CD661F02B98C5CA00D751F2 /* QuotePresenter.swift in Sources */,
 				1C0C0B9D2B9892980092A55D /* MyQuotesViewController.swift in Sources */,
 				1CD661E02B98BE2A00D751F2 /* CreateQuoteViewController.swift in Sources */,
 				1CD661D92B98BB2400D751F2 /* NewQuoteViewController.swift in Sources */,
 				1CD661BD2B98B24000D751F2 /* MyQuotesPresenter.swift in Sources */,
+				1CD662192B9B4AC400D751F2 /* Quotes.swift in Sources */,
 				1CD661E92B98BF2A00D751F2 /* SelectQuotePresenter.swift in Sources */,
 				1CD6620B2B9A129200D751F2 /* MyQuotes.swift in Sources */,
 				1C0C0B992B9892980092A55D /* AppDelegate.swift in Sources */,
 				1C0C0B9B2B9892980092A55D /* SceneDelegate.swift in Sources */,
 				1CD662112B9A1B2700D751F2 /* MyQuoteTableViewCell.swift in Sources */,
+				1CD6621B2B9B6F2700D751F2 /* DataManager.swift in Sources */,
 				1CD662162B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift in Sources */,
 				1CD661E22B98BE3600D751F2 /* CreateQuotePresenter.swift in Sources */,
 				1CD661EE2B98C5C000D751F2 /* QuoteViewController.swift in Sources */,

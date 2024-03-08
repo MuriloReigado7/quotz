@@ -49,6 +49,10 @@ final class SelectQuotePresenter {
         task.resume()
     }
     
+    //---------------------------------------------------------
+    // MARK: Navigation
+    //---------------------------------------------------------
+    
     func openQuoteResultView(quoteIn: String, quoteOut: String) {
         let quoteResultVC = QuoteViewController()
         quoteResultVC.quoteIn = quoteIn

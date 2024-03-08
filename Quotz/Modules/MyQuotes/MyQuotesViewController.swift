@@ -45,17 +45,6 @@ class MyQuotesViewController: UIViewController, MyQuotesPresenterDelegate {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
-    func getMyQuotes() -> MyQuotes? {
-        let defaults = UserDefaults.standard
-        if let savedQuote = defaults.object(forKey: "savedQuote") as? Data {
-            let decoder = JSONDecoder()
-            if let getQuote = try? decoder.decode(MyQuotes.self, from: savedQuote) {
-                return getQuote
-            }
-        }
-        return nil
-    }
-    
     func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -63,6 +52,11 @@ class MyQuotesViewController: UIViewController, MyQuotesPresenterDelegate {
         tableView.register(MyQuoteTableViewCell.nib(), forCellReuseIdentifier: MyQuoteTableViewCell.identifier)
     }
     
+    func reloadData() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
     
     //---------------------------------------------------------
     // MARK: IBAction
@@ -79,21 +73,17 @@ class MyQuotesViewController: UIViewController, MyQuotesPresenterDelegate {
 
 extension MyQuotesViewController: UITableViewDelegate, UITableViewDataSource {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        let userInfo = DataManager.shared.userInformation
+        return userInfo.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MyQuoteTableViewCell.identifier, for: indexPath) as! MyQuoteTableViewCell
-        if let myQuotes = getMyQuotes() {
-            cell.dateLabel.text = myQuotes.date
-            cell.quoteInLabel.text = "\(myQuotes.quoteIn) \(myQuotes.valueIn)"
-            cell.quoteOutLabel.text = "\(myQuotes.quoteOut) \(myQuotes.valueOut)"
-        }
+        let userInfo = DataManager.shared.userInformation[indexPath.row]
+        cell.dateLabel.text = userInfo.date
+        cell.quoteInLabel.text = "\(userInfo.quoteIn) \(userInfo.valueIn)"
+        cell.quoteOutLabel.text = "\(userInfo.quoteOut) \(userInfo.valueOut)"
         return cell
     }
     
