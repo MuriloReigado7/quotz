@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C0C0B992B9892980092A55D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C0B982B9892980092A55D /* AppDelegate.swift */; };
+		1C0C0B9B2B9892980092A55D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C0B9A2B9892980092A55D /* SceneDelegate.swift */; };
+		1C0C0B9D2B9892980092A55D /* MyQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C0B9C2B9892980092A55D /* MyQuotesViewController.swift */; };
+		1C0C0BA22B9892990092A55D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C0C0BA12B9892990092A55D /* Assets.xcassets */; };
+		1C0C0BA52B9892990092A55D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0C0BA32B9892990092A55D /* LaunchScreen.storyboard */; };
+		1C0C0BB02B9892990092A55D /* QuotzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C0BAF2B9892990092A55D /* QuotzTests.swift */; };
+		1C0C0BBA2B9892990092A55D /* QuotzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C0BB92B9892990092A55D /* QuotzUITests.swift */; };
+		1C0C0BBC2B9892990092A55D /* QuotzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C0BBB2B9892990092A55D /* QuotzUITestsLaunchTests.swift */; };
+		1CD661BD2B98B24000D751F2 /* MyQuotesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661BC2B98B24000D751F2 /* MyQuotesPresenter.swift */; };
+		1CD661BF2B98B2D700D751F2 /* MyQuotesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661BE2B98B2D700D751F2 /* MyQuotesView.xib */; };
+		1CD661CB2B98B9FC00D751F2 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C22B98B9FB00D751F2 /* Inter-SemiBold.ttf */; };
+		1CD661CC2B98B9FC00D751F2 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C32B98B9FB00D751F2 /* Inter-Thin.ttf */; };
+		1CD661CD2B98B9FC00D751F2 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C42B98B9FB00D751F2 /* Inter-Light.ttf */; };
+		1CD661CE2B98B9FC00D751F2 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C52B98B9FC00D751F2 /* Inter-Black.ttf */; };
+		1CD661CF2B98B9FC00D751F2 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C62B98B9FC00D751F2 /* Inter-Bold.ttf */; };
+		1CD661D02B98B9FC00D751F2 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C72B98B9FC00D751F2 /* Inter-ExtraLight.ttf */; };
+		1CD661D12B98B9FC00D751F2 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C82B98B9FC00D751F2 /* Inter-ExtraBold.ttf */; };
+		1CD661D22B98B9FC00D751F2 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C92B98B9FC00D751F2 /* Inter-Regular.ttf */; };
+		1CD661D32B98B9FC00D751F2 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661CA2B98B9FC00D751F2 /* Inter-Medium.ttf */; };
+		1CD661D42B98BA0000D751F2 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661C12B98B4CF00D751F2 /* Inter-VariableFont_slnt,wght.ttf */; };
+		1CD661D72B98BB1800D751F2 /* NewQuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661D62B98BB1800D751F2 /* NewQuoteView.xib */; };
+		1CD661D92B98BB2400D751F2 /* NewQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661D82B98BB2400D751F2 /* NewQuoteViewController.swift */; };
+		1CD661DB2B98BB3400D751F2 /* NewQuotePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661DA2B98BB3400D751F2 /* NewQuotePresenter.swift */; };
+		1CD661DE2B98BE1900D751F2 /* CreateQuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661DD2B98BE1900D751F2 /* CreateQuoteView.xib */; };
+		1CD661E02B98BE2A00D751F2 /* CreateQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661DF2B98BE2A00D751F2 /* CreateQuoteViewController.swift */; };
+		1CD661E22B98BE3600D751F2 /* CreateQuotePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661E12B98BE3600D751F2 /* CreateQuotePresenter.swift */; };
+		1CD661E52B98BF0F00D751F2 /* SelectQuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661E42B98BF0F00D751F2 /* SelectQuoteView.xib */; };
+		1CD661E72B98BF1B00D751F2 /* SelectQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661E62B98BF1B00D751F2 /* SelectQuoteViewController.swift */; };
+		1CD661E92B98BF2A00D751F2 /* SelectQuotePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661E82B98BF2A00D751F2 /* SelectQuotePresenter.swift */; };
+		1CD661EC2B98C5B500D751F2 /* QuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661EB2B98C5B500D751F2 /* QuoteView.xib */; };
+		1CD661EE2B98C5C000D751F2 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661ED2B98C5BF00D751F2 /* QuoteViewController.swift */; };
+		1CD661F02B98C5CA00D751F2 /* QuotePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661EF2B98C5CA00D751F2 /* QuotePresenter.swift */; };
+		1CD661F42B98D24A00D751F2 /* SelectQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD661F22B98D24A00D751F2 /* SelectQuoteTableViewCell.swift */; };
+		1CD661F52B98D24A00D751F2 /* SelectQuoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD661F32B98D24A00D751F2 /* SelectQuoteTableViewCell.xib */; };
+		1CD6620B2B9A129200D751F2 /* MyQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6620A2B9A129200D751F2 /* MyQuotes.swift */; };
+		1CD662112B9A1B2700D751F2 /* MyQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6620F2B9A1B2700D751F2 /* MyQuoteTableViewCell.swift */; };
+		1CD662122B9A1B2700D751F2 /* MyQuoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD662102B9A1B2700D751F2 /* MyQuoteTableViewCell.xib */; };
+		1CD662162B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD662142B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift */; };
+		1CD662172B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD662152B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib */; };
+		1CD662192B9B4AC400D751F2 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD662182B9B4AC400D751F2 /* Quotes.swift */; };
+		1CD6621D2B9B797C00D751F2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6621C2B9B797C00D751F2 /* DataManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C0C0BAC2B9892990092A55D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C0C0B8D2B9892980092A55D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C0C0B942B9892980092A55D;
+			remoteInfo = Quotz;
+		};
+		1C0C0BB62B9892990092A55D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C0C0B8D2B9892980092A55D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C0C0B942B9892980092A55D;
+			remoteInfo = Quotz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C0C0B952B9892980092A55D /* Quotz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C0C0B982B9892980092A55D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C0C0B9A2B9892980092A55D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1C0C0B9C2B9892980092A55D /* MyQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQuotesViewController.swift; sourceTree = "<group>"; };
+		1C0C0BA12B9892990092A55D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C0C0BA42B9892990092A55D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C0C0BAB2B9892990092A55D /* QuotzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C0C0BAF2B9892990092A55D /* QuotzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotzTests.swift; sourceTree = "<group>"; };
+		1C0C0BB52B9892990092A55D /* QuotzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C0C0BB92B9892990092A55D /* QuotzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotzUITests.swift; sourceTree = "<group>"; };
+		1C0C0BBB2B9892990092A55D /* QuotzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotzUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CD661BC2B98B24000D751F2 /* MyQuotesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQuotesPresenter.swift; sourceTree = "<group>"; };
+		1CD661BE2B98B2D700D751F2 /* MyQuotesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyQuotesView.xib; sourceTree = "<group>"; };
+		1CD661C12B98B4CF00D751F2 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
+		1CD661C22B98B9FB00D751F2 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		1CD661C32B98B9FB00D751F2 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		1CD661C42B98B9FB00D751F2 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		1CD661C52B98B9FC00D751F2 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		1CD661C62B98B9FC00D751F2 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		1CD661C72B98B9FC00D751F2 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1CD661C82B98B9FC00D751F2 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1CD661C92B98B9FC00D751F2 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		1CD661CA2B98B9FC00D751F2 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		1CD661D62B98BB1800D751F2 /* NewQuoteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewQuoteView.xib; sourceTree = "<group>"; };
+		1CD661D82B98BB2400D751F2 /* NewQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuoteViewController.swift; sourceTree = "<group>"; };
+		1CD661DA2B98BB3400D751F2 /* NewQuotePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuotePresenter.swift; sourceTree = "<group>"; };
+		1CD661DD2B98BE1900D751F2 /* CreateQuoteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateQuoteView.xib; sourceTree = "<group>"; };
+		1CD661DF2B98BE2A00D751F2 /* CreateQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuoteViewController.swift; sourceTree = "<group>"; };
+		1CD661E12B98BE3600D751F2 /* CreateQuotePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuotePresenter.swift; sourceTree = "<group>"; };
+		1CD661E42B98BF0F00D751F2 /* SelectQuoteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectQuoteView.xib; sourceTree = "<group>"; };
+		1CD661E62B98BF1B00D751F2 /* SelectQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuoteViewController.swift; sourceTree = "<group>"; };
+		1CD661E82B98BF2A00D751F2 /* SelectQuotePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuotePresenter.swift; sourceTree = "<group>"; };
+		1CD661EB2B98C5B500D751F2 /* QuoteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuoteView.xib; sourceTree = "<group>"; };
+		1CD661ED2B98C5BF00D751F2 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		1CD661EF2B98C5CA00D751F2 /* QuotePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotePresenter.swift; sourceTree = "<group>"; };
+		1CD661F22B98D24A00D751F2 /* SelectQuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuoteTableViewCell.swift; sourceTree = "<group>"; };
+		1CD661F32B98D24A00D751F2 /* SelectQuoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectQuoteTableViewCell.xib; sourceTree = "<group>"; };
+		1CD6620A2B9A129200D751F2 /* MyQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQuotes.swift; sourceTree = "<group>"; };
+		1CD6620F2B9A1B2700D751F2 /* MyQuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQuoteTableViewCell.swift; sourceTree = "<group>"; };
+		1CD662102B9A1B2700D751F2 /* MyQuoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyQuoteTableViewCell.xib; sourceTree = "<group>"; };
+		1CD662142B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuoteTableViewCell.swift; sourceTree = "<group>"; };
+		1CD662152B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateQuoteTableViewCell.xib; sourceTree = "<group>"; };
+		1CD662182B9B4AC400D751F2 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		1CD6621C2B9B797C00D751F2 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C0C0B922B9892980092A55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C0C0BA82B9892990092A55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C0C0BB22B9892990092A55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C0C0B8C2B9892980092A55D = {
+			isa = PBXGroup;
+			children = (
+				1C0C0B972B9892980092A55D /* Quotz */,
+				1C0C0BAE2B9892990092A55D /* QuotzTests */,
+				1C0C0BB82B9892990092A55D /* QuotzUITests */,
+				1C0C0B962B9892980092A55D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C0C0B962B9892980092A55D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C0C0B952B9892980092A55D /* Quotz.app */,
+				1C0C0BAB2B9892990092A55D /* QuotzTests.xctest */,
+				1C0C0BB52B9892990092A55D /* QuotzUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C0C0B972B9892980092A55D /* Quotz */ = {
+			isa = PBXGroup;
+			children = (
+				1C0C0BC82B9893B20092A55D /* Application */,
+				1C0C0BC92B9893C00092A55D /* Model */,
+				1CD661C02B98B4BB00D751F2 /* Fonts */,
+				1C0C0BCA2B9893CE0092A55D /* Modules */,
+			);
+			path = Quotz;
+			sourceTree = "<group>";
+		};
+		1C0C0BAE2B9892990092A55D /* QuotzTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C0C0BAF2B9892990092A55D /* QuotzTests.swift */,
+			);
+			path = QuotzTests;
+			sourceTree = "<group>";
+		};
+		1C0C0BB82B9892990092A55D /* QuotzUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C0C0BB92B9892990092A55D /* QuotzUITests.swift */,
+				1C0C0BBB2B9892990092A55D /* QuotzUITestsLaunchTests.swift */,
+			);
+			path = QuotzUITests;
+			sourceTree = "<group>";
+		};
+		1C0C0BC82B9893B20092A55D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1C0C0B982B9892980092A55D /* AppDelegate.swift */,
+				1C0C0B9A2B9892980092A55D /* SceneDelegate.swift */,
+				1C0C0BA32B9892990092A55D /* LaunchScreen.storyboard */,
+				1C0C0BA12B9892990092A55D /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1C0C0BC92B9893C00092A55D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CD662182B9B4AC400D751F2 /* Quotes.swift */,
+				1CD6620A2B9A129200D751F2 /* MyQuotes.swift */,
+				1CD6621C2B9B797C00D751F2 /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C0C0BCA2B9893CE0092A55D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1CD661BB2B98AF7200D751F2 /* MyQuotes */,
+				1CD661D52B98BAFE00D751F2 /* NewQuote */,
+				1CD661E32B98BE3A00D751F2 /* SelectQuote */,
+				1CD661DC2B98BDD800D751F2 /* CreateQuote */,
+				1CD661EA2B98C4F200D751F2 /* Quote */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1CD661BB2B98AF7200D751F2 /* MyQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				1CD6620E2B9A1B0E00D751F2 /* Cell */,
+				1CD661BE2B98B2D700D751F2 /* MyQuotesView.xib */,
+				1C0C0B9C2B9892980092A55D /* MyQuotesViewController.swift */,
+				1CD661BC2B98B24000D751F2 /* MyQuotesPresenter.swift */,
+			);
+			path = MyQuotes;
+			sourceTree = "<group>";
+		};
+		1CD661C02B98B4BB00D751F2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1CD661C52B98B9FC00D751F2 /* Inter-Black.ttf */,
+				1CD661C62B98B9FC00D751F2 /* Inter-Bold.ttf */,
+				1CD661C82B98B9FC00D751F2 /* Inter-ExtraBold.ttf */,
+				1CD661C72B98B9FC00D751F2 /* Inter-ExtraLight.ttf */,
+				1CD661C42B98B9FB00D751F2 /* Inter-Light.ttf */,
+				1CD661CA2B98B9FC00D751F2 /* Inter-Medium.ttf */,
+				1CD661C92B98B9FC00D751F2 /* Inter-Regular.ttf */,
+				1CD661C22B98B9FB00D751F2 /* Inter-SemiBold.ttf */,
+				1CD661C32B98B9FB00D751F2 /* Inter-Thin.ttf */,
+				1CD661C12B98B4CF00D751F2 /* Inter-VariableFont_slnt,wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1CD661D52B98BAFE00D751F2 /* NewQuote */ = {
+			isa = PBXGroup;
+			children = (
+				1CD661D62B98BB1800D751F2 /* NewQuoteView.xib */,
+				1CD661D82B98BB2400D751F2 /* NewQuoteViewController.swift */,
+				1CD661DA2B98BB3400D751F2 /* NewQuotePresenter.swift */,
+			);
+			path = NewQuote;
+			sourceTree = "<group>";
+		};
+		1CD661DC2B98BDD800D751F2 /* CreateQuote */ = {
+			isa = PBXGroup;
+			children = (
+				1CD662132B9A3F0900D751F2 /* Cell */,
+				1CD661DD2B98BE1900D751F2 /* CreateQuoteView.xib */,
+				1CD661DF2B98BE2A00D751F2 /* CreateQuoteViewController.swift */,
+				1CD661E12B98BE3600D751F2 /* CreateQuotePresenter.swift */,
+			);
+			path = CreateQuote;
+			sourceTree = "<group>";
+		};
+		1CD661E32B98BE3A00D751F2 /* SelectQuote */ = {
+			isa = PBXGroup;
+			children = (
+				1CD661F12B98D21D00D751F2 /* Cell */,
+				1CD661E42B98BF0F00D751F2 /* SelectQuoteView.xib */,
+				1CD661E62B98BF1B00D751F2 /* SelectQuoteViewController.swift */,
+				1CD661E82B98BF2A00D751F2 /* SelectQuotePresenter.swift */,
+			);
+			path = SelectQuote;
+			sourceTree = "<group>";
+		};
+		1CD661EA2B98C4F200D751F2 /* Quote */ = {
+			isa = PBXGroup;
+			children = (
+				1CD661EB2B98C5B500D751F2 /* QuoteView.xib */,
+				1CD661ED2B98C5BF00D751F2 /* QuoteViewController.swift */,
+				1CD661EF2B98C5CA00D751F2 /* QuotePresenter.swift */,
+			);
+			path = Quote;
+			sourceTree = "<group>";
+		};
+		1CD661F12B98D21D00D751F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1CD661F32B98D24A00D751F2 /* SelectQuoteTableViewCell.xib */,
+				1CD661F22B98D24A00D751F2 /* SelectQuoteTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1CD6620E2B9A1B0E00D751F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1CD662102B9A1B2700D751F2 /* MyQuoteTableViewCell.xib */,
+				1CD6620F2B9A1B2700D751F2 /* MyQuoteTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1CD662132B9A3F0900D751F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1CD662152B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib */,
+				1CD662142B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C0C0B942B9892980092A55D /* Quotz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C0C0BBF2B9892990092A55D /* Build configuration list for PBXNativeTarget "Quotz" */;
+			buildPhases = (
+				1C0C0B912B9892980092A55D /* Sources */,
+				1C0C0B922B9892980092A55D /* Frameworks */,
+				1C0C0B932B9892980092A55D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quotz;
+			productName = Quotz;
+			productReference = 1C0C0B952B9892980092A55D /* Quotz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C0C0BAA2B9892990092A55D /* QuotzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C0C0BC22B9892990092A55D /* Build configuration list for PBXNativeTarget "QuotzTests" */;
+			buildPhases = (
+				1C0C0BA72B9892990092A55D /* Sources */,
+				1C0C0BA82B9892990092A55D /* Frameworks */,
+				1C0C0BA92B9892990092A55D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C0C0BAD2B9892990092A55D /* PBXTargetDependency */,
+			);
+			name = QuotzTests;
+			productName = QuotzTests;
+			productReference = 1C0C0BAB2B9892990092A55D /* QuotzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C0C0BB42B9892990092A55D /* QuotzUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C0C0BC52B9892990092A55D /* Build configuration list for PBXNativeTarget "QuotzUITests" */;
+			buildPhases = (
+				1C0C0BB12B9892990092A55D /* Sources */,
+				1C0C0BB22B9892990092A55D /* Frameworks */,
+				1C0C0BB32B9892990092A55D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C0C0BB72B9892990092A55D /* PBXTargetDependency */,
+			);
+			name = QuotzUITests;
+			productName = QuotzUITests;
+			productReference = 1C0C0BB52B9892990092A55D /* QuotzUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C0C0B8D2B9892980092A55D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					1C0C0B942B9892980092A55D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					1C0C0BAA2B9892990092A55D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 1C0C0B942B9892980092A55D;
+					};
+					1C0C0BB42B9892990092A55D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 1C0C0B942B9892980092A55D;
+					};
+				};
+			};
+			buildConfigurationList = 1C0C0B902B9892980092A55D /* Build configuration list for PBXProject "Quotz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C0C0B8C2B9892980092A55D;
+			productRefGroup = 1C0C0B962B9892980092A55D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C0C0B942B9892980092A55D /* Quotz */,
+				1C0C0BAA2B9892990092A55D /* QuotzTests */,
+				1C0C0BB42B9892990092A55D /* QuotzUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C0C0B932B9892980092A55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD661CB2B98B9FC00D751F2 /* Inter-SemiBold.ttf in Resources */,
+				1C0C0BA52B9892990092A55D /* LaunchScreen.storyboard in Resources */,
+				1CD662122B9A1B2700D751F2 /* MyQuoteTableViewCell.xib in Resources */,
+				1CD661D72B98BB1800D751F2 /* NewQuoteView.xib in Resources */,
+				1CD661CF2B98B9FC00D751F2 /* Inter-Bold.ttf in Resources */,
+				1CD661BF2B98B2D700D751F2 /* MyQuotesView.xib in Resources */,
+				1CD662172B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib in Resources */,
+				1CD661CC2B98B9FC00D751F2 /* Inter-Thin.ttf in Resources */,
+				1CD661D12B98B9FC00D751F2 /* Inter-ExtraBold.ttf in Resources */,
+				1CD661EC2B98C5B500D751F2 /* QuoteView.xib in Resources */,
+				1CD661CD2B98B9FC00D751F2 /* Inter-Light.ttf in Resources */,
+				1C0C0BA22B9892990092A55D /* Assets.xcassets in Resources */,
+				1CD661D32B98B9FC00D751F2 /* Inter-Medium.ttf in Resources */,
+				1CD661D22B98B9FC00D751F2 /* Inter-Regular.ttf in Resources */,
+				1CD661F52B98D24A00D751F2 /* SelectQuoteTableViewCell.xib in Resources */,
+				1CD661D02B98B9FC00D751F2 /* Inter-ExtraLight.ttf in Resources */,
+				1CD661DE2B98BE1900D751F2 /* CreateQuoteView.xib in Resources */,
+				1CD661E52B98BF0F00D751F2 /* SelectQuoteView.xib in Resources */,
+				1CD661CE2B98B9FC00D751F2 /* Inter-Black.ttf in Resources */,
+				1CD661D42B98BA0000D751F2 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C0C0BA92B9892990092A55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C0C0BB32B9892990092A55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C0C0B912B9892980092A55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD661DB2B98BB3400D751F2 /* NewQuotePresenter.swift in Sources */,
+				1CD661F42B98D24A00D751F2 /* SelectQuoteTableViewCell.swift in Sources */,
+				1CD661F02B98C5CA00D751F2 /* QuotePresenter.swift in Sources */,
+				1C0C0B9D2B9892980092A55D /* MyQuotesViewController.swift in Sources */,
+				1CD661E02B98BE2A00D751F2 /* CreateQuoteViewController.swift in Sources */,
+				1CD661D92B98BB2400D751F2 /* NewQuoteViewController.swift in Sources */,
+				1CD661BD2B98B24000D751F2 /* MyQuotesPresenter.swift in Sources */,
+				1CD6621D2B9B797C00D751F2 /* DataManager.swift in Sources */,
+				1CD662192B9B4AC400D751F2 /* Quotes.swift in Sources */,
+				1CD661E92B98BF2A00D751F2 /* SelectQuotePresenter.swift in Sources */,
+				1CD6620B2B9A129200D751F2 /* MyQuotes.swift in Sources */,
+				1C0C0B992B9892980092A55D /* AppDelegate.swift in Sources */,
+				1C0C0B9B2B9892980092A55D /* SceneDelegate.swift in Sources */,
+				1CD662112B9A1B2700D751F2 /* MyQuoteTableViewCell.swift in Sources */,
+				1CD662162B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift in Sources */,
+				1CD661E22B98BE3600D751F2 /* CreateQuotePresenter.swift in Sources */,
+				1CD661EE2B98C5C000D751F2 /* QuoteViewController.swift in Sources */,
+				1CD661E72B98BF1B00D751F2 /* SelectQuoteViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C0C0BA72B9892990092A55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C0C0BB02B9892990092A55D /* QuotzTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C0C0BB12B9892990092A55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C0C0BBC2B9892990092A55D /* QuotzUITestsLaunchTests.swift in Sources */,
+				1C0C0BBA2B9892990092A55D /* QuotzUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C0C0BAD2B9892990092A55D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C0C0B942B9892980092A55D /* Quotz */;
+			targetProxy = 1C0C0BAC2B9892990092A55D /* PBXContainerItemProxy */;
+		};
+		1C0C0BB72B9892990092A55D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C0C0B942B9892980092A55D /* Quotz */;
+			targetProxy = 1C0C0BB62B9892990092A55D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C0C0BA32B9892990092A55D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C0C0BA42B9892990092A55D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C0C0BBD2B9892990092A55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C0C0BBE2B9892990092A55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C0C0BC02B9892990092A55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7KN78T54S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quotz/Application/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = murilo.Quotz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C0C0BC12B9892990092A55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7KN78T54S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quotz/Application/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = murilo.Quotz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C0C0BC32B9892990092A55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7KN78T54S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = murilo.QuotzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quotz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Quotz";
+			};
+			name = Debug;
+		};
+		1C0C0BC42B9892990092A55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7KN78T54S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = murilo.QuotzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quotz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Quotz";
+			};
+			name = Release;
+		};
+		1C0C0BC62B9892990092A55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7KN78T54S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = murilo.QuotzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Quotz;
+			};
+			name = Debug;
+		};
+		1C0C0BC72B9892990092A55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7KN78T54S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = murilo.QuotzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Quotz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C0C0B902B9892980092A55D /* Build configuration list for PBXProject "Quotz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C0C0BBD2B9892990092A55D /* Debug */,
+				1C0C0BBE2B9892990092A55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C0C0BBF2B9892990092A55D /* Build configuration list for PBXNativeTarget "Quotz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C0C0BC02B9892990092A55D /* Debug */,
+				1C0C0BC12B9892990092A55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C0C0BC22B9892990092A55D /* Build configuration list for PBXNativeTarget "QuotzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C0C0BC32B9892990092A55D /* Debug */,
+				1C0C0BC42B9892990092A55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C0C0BC52B9892990092A55D /* Build configuration list for PBXNativeTarget "QuotzUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C0C0BC62B9892990092A55D /* Debug */,
+				1C0C0BC72B9892990092A55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C0C0B8D2B9892980092A55D /* Project object */;
+}

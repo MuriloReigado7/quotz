@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewQupteViewController" customModule="Quotz" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="kr2-PI-iIt" id="nEH-aJ-M1H"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kr2-PI-iIt">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quotz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbW-gu-g4x">
+                    <rect key="frame" x="169.5" y="46" width="36" height="15"/>
+                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nova cotação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hED-BA-Ynh">
+                    <rect key="frame" x="35" y="111" width="80" height="15"/>
+                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byu-57-X8W">
+                    <rect key="frame" x="35" y="207" width="305" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="iNo-Nd-kRB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="12"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Selecionar Par de Moedas">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="selectQuoteTapped:" destination="-1" eventType="touchUpInside" id="gWq-NJ-LsT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqr-c2-0eX">
+                    <rect key="frame" x="35" y="333" width="305" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9UA-SG-ZTK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="12"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Criar Par de Moedas">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="createQuoteTapped:" destination="-1" eventType="touchUpInside" id="tyO-eW-VJ7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="POk-LE-Wvf"/>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="POk-LE-Wvf" firstAttribute="trailing" secondItem="Byu-57-X8W" secondAttribute="trailing" constant="35" id="9Y6-Qr-xW4"/>
+                <constraint firstItem="rqr-c2-0eX" firstAttribute="top" secondItem="POk-LE-Wvf" secondAttribute="top" constant="313" id="9md-AC-Ndj"/>
+                <constraint firstItem="pbW-gu-g4x" firstAttribute="top" secondItem="POk-LE-Wvf" secondAttribute="top" constant="26" id="Cnc-wb-KUp"/>
+                <constraint firstItem="Byu-57-X8W" firstAttribute="top" secondItem="POk-LE-Wvf" secondAttribute="top" constant="187" id="KF5-kF-zTw"/>
+                <constraint firstItem="pbW-gu-g4x" firstAttribute="centerX" secondItem="kr2-PI-iIt" secondAttribute="centerX" id="KqM-n0-ISd"/>
+                <constraint firstItem="hED-BA-Ynh" firstAttribute="top" secondItem="POk-LE-Wvf" secondAttribute="top" constant="91" id="d7S-RH-KhA"/>
+                <constraint firstItem="hED-BA-Ynh" firstAttribute="leading" secondItem="POk-LE-Wvf" secondAttribute="leading" constant="35" id="dG6-JP-6oP"/>
+                <constraint firstItem="POk-LE-Wvf" firstAttribute="trailing" secondItem="rqr-c2-0eX" secondAttribute="trailing" constant="35" id="mGx-Ch-hQ1"/>
+                <constraint firstItem="Byu-57-X8W" firstAttribute="leading" secondItem="POk-LE-Wvf" secondAttribute="leading" constant="35" id="miy-L5-NhB"/>
+                <constraint firstItem="rqr-c2-0eX" firstAttribute="leading" secondItem="POk-LE-Wvf" secondAttribute="leading" constant="35" id="nms-U1-94p"/>
+            </constraints>
+            <point key="canvasLocation" x="173.59999999999999" y="32.833583208395808"/>
+        </view>
+    </objects>
+</document>

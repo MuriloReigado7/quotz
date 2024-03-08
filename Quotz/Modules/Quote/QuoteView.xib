@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuoteViewController" customModule="Quotz" customModuleProvider="target">
+            <connections>
+                <outlet property="quoteInputLabel" destination="Iaz-hL-ch4" id="clg-HS-1Q5"/>
+                <outlet property="quoteOutputLabel" destination="s1G-JH-3st" id="Oar-9X-OEz"/>
+                <outlet property="quoteResult" destination="ICB-zJ-bL1" id="dub-H1-XGJ"/>
+                <outlet property="valueTextField" destination="NoG-Im-IWd" id="KEJ-bd-f7Z"/>
+                <outlet property="view" destination="6ZK-Av-7kR" id="EMG-R0-bFP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6ZK-Av-7kR">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quotz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuR-hf-qV4">
+                    <rect key="frame" x="169.5" y="46" width="36" height="15"/>
+                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conversão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etT-PZ-8y8">
+                    <rect key="frame" x="35" y="111" width="64" height="15"/>
+                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor inicial:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4k-6F-EoU">
+                    <rect key="frame" x="35" y="144" width="79" height="17"/>
+                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xc-vD-ezr">
+                    <rect key="frame" x="35" y="222" width="70" height="17"/>
+                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iaz-hL-ch4">
+                    <rect key="frame" x="35" y="179" width="34" height="22"/>
+                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NoG-Im-IWd">
+                    <rect key="frame" x="89" y="175" width="266" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Pax-tH-O0x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICB-zJ-bL1">
+                    <rect key="frame" x="88.5" y="257.5" width="34.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3m-4w-8iT">
+                    <rect key="frame" x="33" y="567" width="309" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ECI-1n-gLc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="12"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Salvar">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="saveQuoteTapped:" destination="-1" eventType="touchUpInside" id="yz7-cx-gyJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1G-JH-3st">
+                    <rect key="frame" x="35" y="257" width="38.5" height="22"/>
+                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="1WJ-26-CGv"/>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="b4k-6F-EoU" firstAttribute="top" secondItem="1WJ-26-CGv" secondAttribute="top" constant="124" id="4eK-p1-MAt"/>
+                <constraint firstItem="NoG-Im-IWd" firstAttribute="leading" secondItem="Iaz-hL-ch4" secondAttribute="trailing" constant="20" id="5gi-iX-Rgh"/>
+                <constraint firstItem="7xc-vD-ezr" firstAttribute="top" secondItem="1WJ-26-CGv" secondAttribute="top" constant="202" id="Ct6-5l-85l"/>
+                <constraint firstItem="etT-PZ-8y8" firstAttribute="top" secondItem="1WJ-26-CGv" secondAttribute="top" constant="91" id="FNw-TL-9Zy"/>
+                <constraint firstItem="1WJ-26-CGv" firstAttribute="trailing" secondItem="NoG-Im-IWd" secondAttribute="trailing" constant="20" id="Gno-3f-rQx"/>
+                <constraint firstItem="GuR-hf-qV4" firstAttribute="top" secondItem="1WJ-26-CGv" secondAttribute="top" constant="26" id="LbE-Aa-lxW"/>
+                <constraint firstItem="ICB-zJ-bL1" firstAttribute="centerY" secondItem="s1G-JH-3st" secondAttribute="centerY" id="Mi9-nS-wJf"/>
+                <constraint firstItem="1WJ-26-CGv" firstAttribute="bottom" secondItem="G3m-4w-8iT" secondAttribute="bottom" constant="60" id="Mq8-Ag-UaX"/>
+                <constraint firstItem="b4k-6F-EoU" firstAttribute="leading" secondItem="1WJ-26-CGv" secondAttribute="leading" constant="35" id="SN9-rC-SMf"/>
+                <constraint firstItem="s1G-JH-3st" firstAttribute="top" secondItem="1WJ-26-CGv" secondAttribute="top" constant="237" id="TxM-Og-nwQ"/>
+                <constraint firstItem="ICB-zJ-bL1" firstAttribute="leading" secondItem="s1G-JH-3st" secondAttribute="trailing" constant="15" id="ZI8-BH-hOP"/>
+                <constraint firstItem="Iaz-hL-ch4" firstAttribute="top" secondItem="1WJ-26-CGv" secondAttribute="top" constant="159" id="dhE-UQ-UBd"/>
+                <constraint firstItem="s1G-JH-3st" firstAttribute="leading" secondItem="1WJ-26-CGv" secondAttribute="leading" constant="35" id="gLf-vX-hPz"/>
+                <constraint firstItem="G3m-4w-8iT" firstAttribute="leading" secondItem="1WJ-26-CGv" secondAttribute="leading" constant="33" id="m3H-N4-kc9"/>
+                <constraint firstItem="NoG-Im-IWd" firstAttribute="centerY" secondItem="Iaz-hL-ch4" secondAttribute="centerY" id="mix-c6-s7x"/>
+                <constraint firstItem="7xc-vD-ezr" firstAttribute="leading" secondItem="1WJ-26-CGv" secondAttribute="leading" constant="35" id="pvp-gj-L26"/>
+                <constraint firstItem="Iaz-hL-ch4" firstAttribute="leading" secondItem="1WJ-26-CGv" secondAttribute="leading" constant="35" id="q8i-CP-upl"/>
+                <constraint firstItem="1WJ-26-CGv" firstAttribute="trailing" secondItem="G3m-4w-8iT" secondAttribute="trailing" constant="33" id="qc3-2g-ueE"/>
+                <constraint firstItem="GuR-hf-qV4" firstAttribute="centerX" secondItem="6ZK-Av-7kR" secondAttribute="centerX" id="sje-mp-cBR"/>
+                <constraint firstItem="etT-PZ-8y8" firstAttribute="leading" secondItem="1WJ-26-CGv" secondAttribute="leading" constant="35" id="wJ0-oX-5aF"/>
+            </constraints>
+            <point key="canvasLocation" x="205.59999999999999" y="51.724137931034484"/>
+        </view>
+    </objects>
+</document>

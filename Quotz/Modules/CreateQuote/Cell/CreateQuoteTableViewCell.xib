@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+        <array key="Inter-VariableFont_slnt,wght.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="CreateQuoteTableViewCell" customModule="Quotz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMt-M5-0jv">
+                        <rect key="frame" x="0.0" y="10" width="320" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhl-oa-gtU">
+                                <rect key="frame" x="15" y="12" width="23" height="15"/>
+                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real Brasileiro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4g-Xb-zpT">
+                                <rect key="frame" x="15" y="35" width="80" height="15"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o4g-Xb-zpT" firstAttribute="top" secondItem="mhl-oa-gtU" secondAttribute="bottom" constant="8" id="5E1-cP-tln"/>
+                            <constraint firstItem="mhl-oa-gtU" firstAttribute="leading" secondItem="VMt-M5-0jv" secondAttribute="leading" constant="15" id="7sY-B2-UK1"/>
+                            <constraint firstItem="o4g-Xb-zpT" firstAttribute="leading" secondItem="VMt-M5-0jv" secondAttribute="leading" constant="15" id="XPK-Ii-DSY"/>
+                            <constraint firstItem="mhl-oa-gtU" firstAttribute="top" secondItem="VMt-M5-0jv" secondAttribute="top" constant="12" id="k1K-aL-fJA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="VMt-M5-0jv" secondAttribute="trailing" id="T5A-5x-c8Q"/>
+                    <constraint firstItem="VMt-M5-0jv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Tg1-nM-pAO"/>
+                    <constraint firstAttribute="bottom" secondItem="VMt-M5-0jv" secondAttribute="bottom" constant="10" id="hhA-FN-vHe"/>
+                    <constraint firstItem="VMt-M5-0jv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="thF-cM-dAn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="quoteLabel" destination="mhl-oa-gtU" id="ONH-wn-aa5"/>
+                <outlet property="quoteNameLabel" destination="o4g-Xb-zpT" id="MR0-JO-DDj"/>
+            </connections>
+            <point key="canvasLocation" x="135.87786259541986" y="32.74647887323944"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
