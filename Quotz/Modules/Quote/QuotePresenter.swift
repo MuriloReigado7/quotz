@@ -49,6 +49,10 @@ final class QuotePresenter {
         task.resume()
     }
     
+    //---------------------------------------------------------
+    // MARK: Navigation
+    //---------------------------------------------------------
+    
     func openMyQuotesView() {
         let myQuotesVC = MyQuotesViewController()
         delegate?.pushVC(myQuotesVC)

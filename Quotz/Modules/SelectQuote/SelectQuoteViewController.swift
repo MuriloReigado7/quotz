@@ -69,57 +69,21 @@ class SelectQuoteViewController: UIViewController, SelectQuotePresenterDelegate 
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
-    func getCharactersBeforeHyphen() -> [String] {
-        
-        var dictionaryKeys: [String] {
-            if let key = presenter?.quotes.keys {
-                return Array(key)
-            }
-            return [""]
-        }
-        
-        let charactersBeforeHyphen = dictionaryKeys.map { string -> String in
-            if let index = string.firstIndex(of: "-") {
-                return String(string.prefix(upTo: index))
-            }
-            return ""
-        }
-        return charactersBeforeHyphen
-    }
-    
-    func getCharactersAfterHyphen() -> [String] {
-        
-        var dictionaryKeys: [String] {
-            if let key = presenter?.quotes.keys {
-                return Array(key)
-            }
-            return [""]
-        }
-        
-        let charactersAfterHyphen = dictionaryKeys.map {
-            $0.split(separator: "-").last.map { String($0) } ?? ""
-        }
-        return charactersAfterHyphen
-    }
-    
-    func getSelectedQuote() -> [String] {
-        
-        var dictionaryKeys: [String] {
-            if let key = presenter?.quotes.keys {
-                return Array(key)
-            }
-            return [""]
-        }
-        return dictionaryKeys
-    }
+    //---------------------------------------------------------
+    // MARK: IBOutlets
+    //---------------------------------------------------------
     
     @IBAction func searchHandler(_ sender: UITextField) {
         if let searchText = sender.text {
-            allQuotes = getCharactersBeforeHyphen().filter{$0.lowercased().contains(searchText.lowercased())}
+            allQuotes = presenter?.getCharactersBeforeHyphen().filter{$0.lowercased().contains(searchText.lowercased())} ?? [""]
             tableView.reloadData()
         }
     }
 }
+
+    //---------------------------------------------------------
+    // MARK: Extension
+    //---------------------------------------------------------
 
 extension SelectQuoteViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -134,11 +98,11 @@ extension SelectQuoteViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SelectQuoteTableViewCell.identifier, for: indexPath) as! SelectQuoteTableViewCell
         if allQuotes.isEmpty {
-            cell.coinImput.text = getCharactersBeforeHyphen()[indexPath.row]
+            cell.coinImput.text = presenter?.getCharactersBeforeHyphen()[indexPath.row]
         } else {
             cell.coinImput.text = allQuotes[indexPath.row]
         }
-        cell.coinOutput.text = getCharactersAfterHyphen()[indexPath.row]
+        cell.coinOutput.text = presenter?.getCharactersAfterHyphen()[indexPath.row]
         return cell
     }
     
@@ -148,9 +112,9 @@ extension SelectQuoteViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if allQuotes.isEmpty {
-            presenter?.openQuoteResultView(quoteIn: getCharactersBeforeHyphen()[indexPath.row], quoteOut: getCharactersAfterHyphen()[indexPath.row])
+            presenter?.openQuoteResultView(quoteIn: presenter?.getCharactersBeforeHyphen()[indexPath.row] ?? "", quoteOut: presenter?.getCharactersAfterHyphen()[indexPath.row] ?? "")
         } else {
-            presenter?.openQuoteResultView(quoteIn: allQuotes[indexPath.row], quoteOut: getCharactersAfterHyphen()[indexPath.row])
+            presenter?.openQuoteResultView(quoteIn: allQuotes[indexPath.row], quoteOut: presenter?.getCharactersAfterHyphen()[indexPath.row] ?? "")
         }
         
     }

@@ -21,6 +21,10 @@ final class MyQuotesPresenter {
         self.delegate = delegate
     }
     
+    //---------------------------------------------------------
+    // MARK: Navigation
+    //---------------------------------------------------------
+    
     func openNewQuoteView() {
         let newQuoteVC = NewQuoteViewController()
         delegate?.pushVC(newQuoteVC)

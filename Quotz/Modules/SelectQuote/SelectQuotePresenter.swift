@@ -50,6 +50,45 @@ final class SelectQuotePresenter {
     }
     
     //---------------------------------------------------------
+    // MARK: Logic
+    //---------------------------------------------------------
+    
+    func getCharactersBeforeHyphen() -> [String] {
+        
+        var dictionaryKeys: [String] {
+            return Array(quotes.keys)
+        }
+        
+        let charactersBeforeHyphen = dictionaryKeys.map { string -> String in
+            if let index = string.firstIndex(of: "-") {
+                return String(string.prefix(upTo: index))
+            }
+            return ""
+        }
+        return charactersBeforeHyphen
+    }
+    
+    func getCharactersAfterHyphen() -> [String] {
+        
+        var dictionaryKeys: [String] {
+            return Array(quotes.keys)
+        }
+        
+        let charactersAfterHyphen = dictionaryKeys.map {
+            $0.split(separator: "-").last.map { String($0) } ?? ""
+        }
+        return charactersAfterHyphen
+    }
+    
+    func getSelectedQuote() -> [String] {
+        
+        var dictionaryKeys: [String] {
+            return Array(quotes.keys)
+        }
+        return dictionaryKeys
+    }
+    
+    //---------------------------------------------------------
     // MARK: Navigation
     //---------------------------------------------------------
     

@@ -97,28 +97,6 @@ class CreateQuoteViewController: UIViewController, CreateQuotePresenterDelegate,
             self.view.layoutIfNeeded()
         }
     }
-    
-    func getQuote() -> [String] {
-        
-        var dictionaryKeys: [String] {
-            if let key = presenter?.quotes.keys {
-                return Array(key)
-            }
-            return [""]
-        }
-        return dictionaryKeys
-    }
-    
-    func getQuoteName() -> [String] {
-        
-        var dictionaryKeys: [String] {
-            if let key = presenter?.quotes.values {
-                return Array(key)
-            }
-            return [""]
-        }
-        return dictionaryKeys
-    }
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let text = (textField.text as NSString?)?.replacingCharacters(in: range, with: string) ?? ""
@@ -145,8 +123,8 @@ extension CreateQuoteViewController: UITableViewDelegate, UITableViewDataSource 
         let cell = tableView.dequeueReusableCell(withIdentifier: CreateQuoteTableViewCell.identifier, for: indexPath) as! CreateQuoteTableViewCell
         
         if presenter?.quotesForFilter.count == 0 {
-            cell.quoteLabel.text = getQuote()[indexPath.row]
-            cell.quoteNameLabel.text = getQuoteName()[indexPath.row]
+            cell.quoteLabel.text = presenter?.getQuote()[indexPath.row]
+            cell.quoteNameLabel.text = presenter?.getQuoteName()[indexPath.row]
         } else {
             let value = presenter?.quotesForFilter[indexPath.row]
             cell.quoteLabel.text = value?.0
@@ -163,12 +141,12 @@ extension CreateQuoteViewController: UITableViewDelegate, UITableViewDataSource 
         
         if presenter?.quotesForFilter.count == 0 {
             if isFirstTouch {
-                self.quoteInLabel.text = getQuote()[indexPath.row]
-                self.quoteIn = getQuote()[indexPath.row]
+                self.quoteInLabel.text = presenter?.getQuote()[indexPath.row]
+                self.quoteIn = presenter?.getQuote()[indexPath.row] ?? ""
                 isFirstTouch = false
             } else {
-                self.quoteOutLabel.text = getQuote()[indexPath.row]
-                self.quoteOut = getQuote()[indexPath.row]
+                self.quoteOutLabel.text = presenter?.getQuote()[indexPath.row]
+                self.quoteOut = presenter?.getQuote()[indexPath.row] ?? ""
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                     self.presenter?.openQuoteResultView(quoteIn: self.quoteIn, quoteOut: self.quoteOut)
                 }

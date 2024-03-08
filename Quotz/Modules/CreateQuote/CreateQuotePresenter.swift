@@ -86,7 +86,23 @@ final class CreateQuotePresenter {
                    }
            }
         delegate?.reloadData()
-       }
+    }
+    
+    func getQuote() -> [String] {
+        
+        var dictionaryKeys: [String] {
+            return Array(quotes.keys)
+        }
+        return dictionaryKeys
+    }
+    
+    func getQuoteName() -> [String] {
+        
+        var dictionaryKeys: [String] {
+            return Array(quotes.values)
+        }
+        return dictionaryKeys
+    }
     
     //---------------------------------------------------------
     // MARK: Navigation

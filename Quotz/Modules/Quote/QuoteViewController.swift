@@ -127,6 +127,10 @@ class QuoteViewController: UIViewController, QuotePresenterDelegate, UITextField
         return dateFormatted
     }
     
+    //---------------------------------------------------------
+    // MARK: Functions
+    //---------------------------------------------------------
+    
     @IBAction func saveQuoteTapped(_ sender: Any) {
         
         let newQuote = MyQuotes(date: getDate(),
