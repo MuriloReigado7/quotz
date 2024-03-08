@@ -111,7 +111,7 @@
 		1CD662142B9A3F2100D751F2 /* CreateQuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuoteTableViewCell.swift; sourceTree = "<group>"; };
 		1CD662152B9A3F2100D751F2 /* CreateQuoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateQuoteTableViewCell.xib; sourceTree = "<group>"; };
 		1CD662182B9B4AC400D751F2 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
-		1CD6621C2B9B797C00D751F2 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = ../../../.Trash/DataManager.swift; sourceTree = "<group>"; };
+		1CD6621C2B9B797C00D751F2 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
